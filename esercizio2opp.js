@@ -20,9 +20,11 @@ class Pet {
 
 const pet1 = new Pet("Fido", "Giovanni", "Cane", "Labrador");
 const pet2 = new Pet("Rex", "Giovanni", "Cane", "Pastore Tedesco");
+const pet3 = new Pet("Rex", "Dario", "Cane", "Pastore Tedesco");
 
 // Verifica se i due animali condividono lo stesso padrone e visualizza il risultato
-console.log(Pet.shareOwner(pet1, pet2)); // Questo stamperà 'true' nella console
+console.log(Pet.shareOwner(pet1, pet2));
+console.log(Pet.shareOwner(pet1, pet3));
 
 // Funzione per aggiungere il pet alla lista e mostrare i dati
 function addPetToList(pet) {
